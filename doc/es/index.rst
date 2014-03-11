@@ -1,8 +1,12 @@
-===========================
-Stock. Relación con almacén
-===========================
+=======================
+Stock. Atajos (keyword)
+=======================
 
 Añade atajos desde:
 
-* Variante de producto: A movimientos de almacén de este producto.
-* Ubicaciones: A movimientos de almacen para una fecha y producto determinado.
+* Productos:
+  - Variante de producto a movimientos de almacén de este producto.
+  - Variante de producto a productos (template a product)
+  - Producto a reglas de abastecimientos
+* Logística:
+  - Ubicaciones a movimientos de almacen para una fecha y producto determinado.

@@ -4,6 +4,18 @@ The COPYRIGHT file at the top level of this repository contains the full
 copyright notices and license terms. -->
 <tryton>
     <data>
+        <!-- Template to Product -->
+        <record model="ir.action.act_window" id="act_product_product_form">
+            <field name="name">Variants</field>
+            <field name="res_model">product.product</field>
+            <field name="domain">[("template", "=", Eval('active_id'))]</field>
+        </record>
+        <record model="ir.action.keyword" id="act_open_product_product_keyword">
+            <field name="keyword">form_relate</field>
+            <field name="model">product.template,-1</field>
+            <field name="action" ref="act_product_product_form"/>
+        </record>
+
         <record model="ir.action.act_window" id="act_product_moves">
             <field name="name">Product Moves</field>
             <field name="res_model">stock.move</field>
@@ -84,6 +96,18 @@ copyright notices and license terms. -->
             <field name="keyword">tree_open</field>
             <field name="model">stock.location,-1</field>
             <field name="action" ref="act_open_moves_for_location"/>
+        </record>
+
+        <!-- Product to Order Points-->
+        <record model="ir.action.act_window" id="act_order_point_form">
+            <field name="name">Order Points</field>
+            <field name="res_model">stock.order_point</field>
+            <field name="domain">[("product", "=", Eval('active_id'))]</field>
+        </record>
+        <record model="ir.action.keyword" id="act_open_order_point_keyword">
+            <field name="keyword">form_relate</field>
+            <field name="model">product.product,-1</field>
+            <field name="action" ref="act_order_point_form"/>
         </record>
     </data>
 </tryton>
