@@ -1,0 +1,72 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:stock.location.open_moves.start,effective_date:"
+msgid "At Date"
+msgstr "A fecha"
+
+msgctxt "field:stock.location.open_moves.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:stock.location.open_moves.start,product:"
+msgid "Product"
+msgstr "Productos"
+
+msgctxt "help:stock.location.open_moves.start,effective_date:"
+msgid ""
+"Allow to compute expected stock quantities for this date.\n"
+"* An empty value is an infinite date in the future.\n"
+"* A date in the past will provide historical values."
+msgstr ""
+"Permite calcular las cantidades previstas de stock para esta fecha.\n"
+"* Un valor vacío es un fecha infinita en el futuro.\n"
+"* Una fecha en el pasado proporcionará valores históricos."
+
+msgctxt "model:ir.action,name:act_moves_for_location"
+msgid "Moves for Location"
+msgstr "Movimientos por ubicación"
+
+msgctxt "model:ir.action,name:act_open_moves_for_location"
+msgid "Moves for Location"
+msgstr "Movimientos por ubicación"
+
+msgctxt "model:ir.action,name:act_product_moves"
+msgid "Product Moves"
+msgstr "Movimientos de producto"
+
+msgctxt "model:ir.action.act_window.domain,name:act_product_moves_domain_all"
+msgid "All"
+msgstr "Todo"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_product_moves_domain_from_supplier"
+msgid "From Suppliers"
+msgstr "Desde proveedor"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_product_moves_domain_from_supplier_waiting"
+msgid "From Suppliers Waiting"
+msgstr "En espera desde proveedor"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_product_moves_domain_to_customer"
+msgid "To Customers"
+msgstr "Hacia clientes"
+
+msgctxt "model:stock.location.open_moves.start,name:"
+msgid "Open Moves"
+msgstr "Abrir movimientos"
+
+msgctxt "view:stock.location.open_moves.start:"
+msgid "Stock Relation"
+msgstr "Relación con estoc"
+
+msgctxt "wizard_button:stock.location.open_moves,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:stock.location.open_moves,start,open_:"
+msgid "Open"
+msgstr "Abrir"
