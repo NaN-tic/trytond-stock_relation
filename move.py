@@ -7,7 +7,7 @@ from trytond.pyson import PYSONEncoder
 from trytond.transaction import Transaction
 from trytond.wizard import Button, StateAction, StateView, Wizard
 
-__all__ = ['OpenMovesStart','OpenMoves']
+__all__ = ['OpenMovesStart', 'OpenMoves']
 
 
 class OpenMovesStart(ModelView):
