@@ -40,10 +40,6 @@ msgctxt "model:ir.action,name:act_product_moves"
 msgid "Product Moves"
 msgstr "Moviments de producte"
 
-msgctxt "model:ir.action,name:act_product_product_form"
-msgid "Variants"
-msgstr "Variants"
-
 msgctxt "model:ir.action.act_window.domain,name:act_product_moves_domain_all"
 msgid "All"
 msgstr "Tots"
@@ -77,4 +73,4 @@ msgstr "Cancel·la"
 
 msgctxt "wizard_button:stock.location.open_moves,start,open_:"
 msgid "Open"
-msgstr "Per obrir"
+msgstr "Obre"

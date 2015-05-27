@@ -40,10 +40,6 @@ msgctxt "model:ir.action,name:act_product_moves"
 msgid "Product Moves"
 msgstr "Movimientos de producto"
 
-msgctxt "model:ir.action,name:act_product_product_form"
-msgid "Variants"
-msgstr "Variantes"
-
 msgctxt "model:ir.action.act_window.domain,name:act_product_moves_domain_all"
 msgid "All"
 msgstr "Todo"
