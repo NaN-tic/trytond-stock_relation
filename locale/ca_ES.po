@@ -32,10 +32,6 @@ msgctxt "model:ir.action,name:act_open_moves_for_location"
 msgid "Moves for Location"
 msgstr "Moviments d'estoc per ubicació"
 
-msgctxt "model:ir.action,name:act_order_point_form"
-msgid "Order Points"
-msgstr "Regles d'estoc mínim"
-
 msgctxt "model:ir.action,name:act_product_moves"
 msgid "Product Moves"
 msgstr "Moviments de producte"
