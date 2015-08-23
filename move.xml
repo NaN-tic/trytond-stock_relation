@@ -7,8 +7,12 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_product_moves">
             <field name="name">Product Moves</field>
             <field name="res_model">stock.move</field>
-            <field name="domain">[('product', '=', Eval('active_id'))]</field>
-            <field name="search_value">[('create_date', '>=', DateTime(hour=0, minute=0, second=0, microsecond=0, delta_years=-1))]</field>
+            <field name="domain"
+                eval="[('product', '=', Eval('active_id'))]"
+                pyson="1"/>
+            <field name="search_value"
+                eval="[('create_date', '>=', DateTime(hour=0, minute=0, second=0, microsecond=0, delta_years=-1))]"
+                pyson="1"/>
         </record>
         <record model="ir.action.act_window.view" id="act_product_moves_tree">
             <field name="sequence" eval="1"/>
@@ -29,19 +33,25 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window.domain" id="act_product_moves_domain_from_supplier">
             <field name="name">From Suppliers</field>
             <field name="sequence" eval="20"/>
-            <field name="domain">[('from_location.type', '=', 'supplier')]</field>
+            <field name="domain"
+                eval="[('from_location.type', '=', 'supplier')]"
+                pyson="1"/>
             <field name="act_window" ref="act_product_moves"/>
         </record>
         <record model="ir.action.act_window.domain" id="act_product_moves_domain_from_supplier_waiting">
             <field name="name">From Suppliers Waiting</field>
             <field name="sequence" eval="30"/>
-            <field name="domain">[('from_location.type', '=', 'supplier'), ('state', '=', 'draft'), ('shipment', '=', None)]</field>
+            <field name="domain"
+                eval="[('from_location.type', '=', 'supplier'), ('state', '=', 'draft'), ('shipment', '=', None)]"
+                pyson="1"/>
             <field name="act_window" ref="act_product_moves"/>
         </record>
         <record model="ir.action.act_window.domain" id="act_product_moves_domain_to_customer">
             <field name="name">To Customers</field>
             <field name="sequence" eval="40"/>
-            <field name="domain">[('to_location.type', '=', 'customer')]</field>
+            <field name="domain"
+                eval="[('to_location.type', '=', 'customer')]"
+                pyson="1"/>
             <field name="act_window" ref="act_product_moves"/>
         </record>
         <record model="ir.action.keyword"
