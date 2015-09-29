@@ -12,7 +12,7 @@ msgstr "ID"
 
 msgctxt "field:stock.location.open_moves.start,product:"
 msgid "Product"
-msgstr "Productes"
+msgstr "Producte"
 
 msgctxt "help:stock.location.open_moves.start,effective_date:"
 msgid ""
