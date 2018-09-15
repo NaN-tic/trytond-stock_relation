@@ -2,13 +2,13 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.pool import Pool
-from .move import *
+from . import move
 
 
 def register():
     Pool.register(
-        OpenMovesStart,
+        move.OpenMovesStart,
         module='stock_relation', type_='model')
     Pool.register(
-        OpenMoves,
+        move.OpenMoves,
         module='stock_relation', type_='wizard')
